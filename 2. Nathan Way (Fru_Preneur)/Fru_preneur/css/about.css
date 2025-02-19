@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #000;
+}
+
+p {
+    color: #333;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+/* .banner { */
+    /* background-image: url('https://images.app.goo.gl/2gPBZNeeKcmr5XMV8'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+} */
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* About Sections */
+.about-section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.content.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact & Newsletter Sections */
+.contact-section,
+.newsletter-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.newsletter-section form {
+    margin-top: 10px;
+}
+
+.newsletter-section input {
+    padding: 10px;
+    width: 250px;
+    max-width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter-section button {
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-section button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content.reverse {
+        flex-direction: column;
+    }
+
+    .text {
+        margin-bottom: 20px;
+    }
+}
+
+#page-header .about{
+    background-image: url("../images/banner/b12.jpeg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    animation: fadeIn 3s ease-in-out;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-20);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#page-header h2,
+#page-header p{
+    color: white;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+.banner {
+    background-image: url('../images/banner/b12.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .newsletter-section input {
+        width: 100%;
+    }
+
+    .newsletter-section button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

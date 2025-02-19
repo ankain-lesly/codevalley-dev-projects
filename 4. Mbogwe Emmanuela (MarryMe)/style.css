@@ -1,0 +1,34 @@
+.outter-form{
+    background-color:  r
+}
+.create{
+    padding-left: 50px;
+    padding-right: 45px;
+    
+
+}
+.hero {
+    background-image: url(home\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.login{
+    background-image: url(home\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.marry{
+    color: rgb(38, 26, 128);
+}

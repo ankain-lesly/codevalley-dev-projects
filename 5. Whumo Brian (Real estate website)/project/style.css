@@ -1,0 +1,356 @@
+/* Basic Reset and Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: sans-serif; /* Choose a suitable font */
+    line-height: 1.6;
+    color: #ffffff; /* Dark gray text color */
+
+    min-height: 100vh;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+    background-color: #1b161646; /* Light gray background */
+    padding: 1rem 0;
+    height: 87vh;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 5px 40px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 30px;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.842);
+    transition: .3s ease;
+}
+header a:hover{
+    color: rgb(245, 245, 245);
+}
+header li a::after{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0%;
+    transition: .3s ease;
+    background: transparent;
+    margin: auto;
+    
+
+}
+li a:hover::after{
+background: #7258e4;
+width: 100%;
+}
+.get-started {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+}
+
+.search-box {
+  display: flex;
+  background: #fff;
+  color: #000;
+  padding: 9px 10px;
+  padding-right: 0px;
+  align-items: center;
+  border-radius: 10px;
+  height: 70px;
+}
+
+.search-box select, .search-box button {
+  padding: 0.5rem;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center; /* Center the image */
+}
+
+ video{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: auto;
+    height: 87vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    
+}
+.ipt{
+    height: 90%;
+    width: 100%;
+    border: 2px solid #c0c0c079;
+    padding: 0.5rem;
+  margin-right: 10px;
+
+  border-radius: 5px;
+}
+.ipt:focus{
+    border: 2px solid #0076b565;
+}
+
+/* Featured Properties Section Styles */
+.featured-properties {
+    text-align: center;
+    
+    
+    margin: 2rem auto;
+    background: #ffffffa1;
+    margin-bottom: 50px;
+    
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured-properties h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+#buy_rent,
+#property_type{
+    border: 2px solid transparent;
+    width: 110px;
+    background: whitesmoke;
+    height: 80%;
+    appearance: none;
+    cursor: pointer;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    border-radius: 5px;
+}
+.ile{
+    /* height: 100%; */
+    /* padding-top: 5px; */
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    height: 100%;
+ 
+}
+#buy_rent:hover,
+#property_type:hover{
+    background: rgba(117, 117, 117, 0.527);
+    
+
+}
+#buy_rent:focus,
+#property_type:focus{
+    border: 2px solid #0076b565;
+    
+
+}
+.explore-more {
+    border: 1px solid #007bff;
+    background: #fff;
+    color: #007bff;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+    /* border: none; */
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px  rgba(0, 0, 0, 0.397);
+}
+.text{
+    text-align: start;
+}
+.explore-more:hover{
+    background: #007bff;
+    color: #fff;
+}
+
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+.btn{
+    height: 100%;
+    width: 130px;
+    background: linear-gradient(45deg, rgba(156, 156, 156, 0.664), #007bff);
+  
+}
+.btn:hover{
+    background: #007bff;
+}
+.container {
+    /* max-width: 960px; */
+    margin: 20px auto;
+    padding: 20px;
+    background: #3592f528;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+svg{
+    height: 20px;
+    color: #444;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff; /* Example: Blue color */
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+    
+}
+.details p:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+/* Responsive adjustments as per the image */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+.footer {
+    background-color: #043366; /* Light gray background */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;
+}
+
+.footer-section {
+    margin-bottom: 20px; /* Space between sections */
+    flex: 1 1 200px;
+     /* Each section takes at least 200px */
+}
+.footer-section p{
+    color: #ffffffcc;
+}
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    color: #738bb8;
+    text-align: center;
+    width: 100%; /* Take full width */
+    padding-top: 20px; /* Add some top padding */
+    border-top: 1px solid #ddd; /* Add a separator line */
+}
+footer a{
+    color: #ffffffcc;
+}

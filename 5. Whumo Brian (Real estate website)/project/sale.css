@@ -1,0 +1,139 @@
+body{
+   
+    height: 110vh;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.form{
+    position: relative;
+  width: 590px;
+  height: 650px;
+  background: var(--light);
+  border-radius: 10px;
+ 
+  backdrop-filter: blur(20px);
+  box-shadow: #00000059 0 5px 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+
+  margin-top: 24px
+}
+.error-txt {
+    width: 100%;
+  
+    text-align: center;
+    color: #751a2e;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+  }
+  .loader {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    animation: ani 1s ease infinite;
+  }
+  @keyframes ani {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  .input input, textarea{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 35px 0 5px;
+    /* margin-bottom: px; */
+  } 
+  .input {
+    position: relative;
+    width: 100%;
+    height: 33px;
+    border-bottom: 1px solid #235;
+    margin: 28px 0;
+    
+  } 
+  .input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.4s;
+  }
+  
+  .input input:focus ~ label,
+  .input input:valid ~ label {
+    top: -5px;
+    color: #ffffffa8;
+  }
+  .input textarea:focus ~ label,
+  .input textarea:valid ~ label {
+    top: -5px;
+    color: #222;
+  }
+  select{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 0 10px;
+    appearance: none;
+    background: #fffffff1;
+  }
+  .Submitbtn {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    background: #007bff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(218, 218, 218);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn:hover {
+    color: whitesmoke;
+  }
+  .head{
+    color: #3580cc;
+    font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  /* margin-top: 2px; */
+  width: 100%;
+  text-align: center;
+}
+.imgf{
+    height: 20px;
+}

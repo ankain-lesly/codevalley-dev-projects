@@ -1,0 +1,129 @@
+.savings-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Common Card Styling */
+  .savings-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    transition: transform 0.3s ease-in-out;
+    width: 80%;
+  }
+  
+  .savings-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Budget Card */
+  .budget-card {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .budget-icon {
+    font-size: 45px;
+    color: #fff;
+  }
+  
+  .budget-title {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .budget-amount {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .initial-amount {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  /* Spending Chart */
+  .spending-card {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .spending-card canvas {
+    max-height: 300px;
+    width: 100%;
+  }
+  
+  /* Advice Card */
+  .advice-card {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    padding: 20px;
+  }
+  
+  .advice-icon {
+    font-size: 40px;
+    color: white;
+  }
+  
+  .advice-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .advice-text {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  /* Grid Layout */
+  @media screen and (min-width: 768px) {
+    .savings-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+  
+    .budget-advice-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 767px) {
+    .savings-container {
+      flex-direction: column;
+    }
+  
+    .savings-card {
+      max-width: 90%;
+      margin-bottom: 15px;
+    }
+  
+    .budget-title,
+    .advice-title {
+      font-size: 20px;
+    }
+  
+    .budget-amount,
+    .initial-amount,
+    .advice-text {
+      font-size: 14px;
+    }
+  
+    .budget-icon,
+    .advice-icon {
+      font-size: 35px;
+    }
+  }
+  

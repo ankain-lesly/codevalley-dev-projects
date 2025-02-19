@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us - Furniture Hub</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+	<style>
+		/* Global Styles */
+		*{
+			box-sizing:border-box;
+		}
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			font-size: 1rem;
+			color: #333;
+			line-height: 1.4;
+			margin: 0;
+			padding: 0;
+		}
+				/* Header Styles */
+				#logo{
+        height:100px;
+        width:100px;
+        border-radius:5rem;
+      
+    }
+    .location-dropdown{
+        margin-left:2rem;
+        margin-top:0.5rem;
+        /* margin-bottom:3rem; */
+    }
+    label{
+        font-size:15px;
+        margin-left:1.5rem;
+        margin-top:1rem;
+        color:white;
+    }
+    #country-dropdown{
+        width: 8rem;
+  background-color: black;
+  color: white;
+  height: 2rem;
+  font-weight: bold;
+  font-size: 16px;
+  border-color: black;
+    }
+    #map{
+        font-size:x-large;
+        color:white;
+    }
+    .logolocate{
+        display:flex;
+        margin-right:2rem;
+        margin-top:-0.5rem;
+    }
+    /* Basic styling for the search bar */
+    .search-bar {
+        display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  width: 400px;
+  background-color: #fff;
+  margin-right: 10rem;
+  margin-top: 1.5rem;
+  width: 46rem;
+  height:3rem;
+        }
+
+        /* Style the dropdown */
+        .search-bar select {
+            border: none;
+            background-color: transparent;
+            font-size: 13px;
+            padding: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        /* Style the text input */
+        .search-bar input[type="text"] {
+            border: none;
+            padding: 5px;
+            font-size: 16px;
+            outline: none;
+            flex: 1;
+			margin-bottom:0rem;
+        }
+
+        /* Style the search icon */
+        .search-bar button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            color: #333;
+        }
+        .searchshop{
+            display: flex;
+        }
+         #shopping{
+            color: gold;
+  font-weight: bold;
+  font-size: xxx-large;
+  margin-right: 5rem;
+  margin-top: 2rem;
+         }
+         /* .nav-count{
+         /* margin-top: 2rem; */
+          
+         .navigationbar{
+            background-color: rgba(0, 0, 139, 0.233);
+         }
+		/* Contact Form Styles */
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 2rem;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 1rem;
+			font-size: 1rem;
+		}
+
+		input[type="submit"] {
+			background-color: black;
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border-radius: 5px;
+			border: none;
+			font-size: 1rem;
+			cursor: pointer;
+			transition: background-color 0.2s ease-in-out;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #02324d;
+		}
+
+		/* Contact Information Styles */
+		.contact-info {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 2rem;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-gap: 2rem;
+		}
+
+		.contact-info h2 {
+			font-size: 1.5rem;
+			margin: 1rem 0;
+			padding: 0;
+		}
+
+		.contact-info p {
+			font-size: 1rem;
+			margin: 0;
+			padding: 0;
+			line-height: 1.4;
+		}
+
+		.contact-info a {
+			color: #034f84;
+		}
+
+		/* Footer Styles */
+		.footer{
+	background-color: #131A22;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* padding: px; */
+    width: 100%;
+    margin-top: 0.3rem;
+	color:white;
+	font-size:15px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align:center;
+}
+.footer-links a{
+    color: white;
+    font-size: medium;
+
+}
+.footer-links ul {
+    list-style: none;
+}
+		footer p {
+			margin: 0;
+			padding: 0;
+		}
+		#support{
+			margin-top:1rem;
+		}
+		label{
+			color:black;
+		}
+		#icon{
+			border-radius:1rem;
+			font-size:xx-large;
+		}
+		#underhead{
+			margin-top: -5rem;
+  height: 3rem;
+		}
+/* Screen responsiveness */
+
+	</style>
+</head>
+<body>
+</head>
+<body>
+    <header>
+     <div class="head">
+           <div class="logolocate">
+        <div id="logo">
+        <img src="assets/images/logo4.jpg" alt="logo" id="logo">
+        </div>
+        <div class="location-dropdown">
+            <label for="shipping" style="color:white;">Deliver to</label><br>
+            <i class="fas fa-map-marker-alt" id="map"></i>
+        <select name="" id="country-dropdown" ></select>
+        </div>
+           </div>
+           <div class="searchbar">  
+               <div class="searchshop">
+<div class="search-bar">
+    <!-- Dropdown to select category -->
+    <select>
+        <option value="all">Categories</option>
+        <option value="books">Beds</option>
+        <option value="electronics">Chairs</option>
+        <option value="fashion">Cupboards</option>
+        <option value="home">Tables</option>
+        <option value="beauty">Counters</option>
+        <!-- Add more categories as needed -->
+    </select>
+
+    <!-- Text input for search query -->
+    <input type="text" placeholder="Search...">
+
+    <!-- Search button with icon -->
+    <button type="submit">
+        <i class="fas fa-search" style="font-weight: bold;
+  font-size: x-large;
+  color: gold;"></i>
+    </button>
+</div>
+<div class="cart-container">
+            <i class="fas fa-shopping-cart"id="shopping"></i>
+           <!-- <span class="cart-count">0</span> -->
+        </div>
+        <!-- <button onclick="addToCart()">Add to Cart</button> -->
+        </div>
+    </div>
+</header>
+<img src="assets/images/image.png" alt="" srcset="" width="100%" id="underhead">
+<div class="navigationbar">
+<nav>
+        <ul>
+            <a href="home.php" id="home"> Home</a>
+            <a href="Gallery.php" id="gallery">Gallery</a>
+            <a href="about.php" id="about">About</a>
+            <a class="active" id="contact">Contact</a>
+            <a href="Return.php" id="return">Refund policy</a>
+            <a href="warranty policy.php" id="waranty">Waranty policy</a>
+            <a href="FAQ.php" id="faq">FAQ</a>
+        </ul>
+    </nav>
+</div>
+	<main>
+		<form action="" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+
+			<input type="submit" value="Send">
+		</form>
+
+		<div class="contact-info">
+			<div>
+				<h2>Our Address</h2>
+				<p>123 Main Street</p>
+				<p>City, State Zip Code</p>
+			</div>
+			<div>
+				<h2>Phone Numbers</h2>
+				<p>Office: (123) 456-7890</p>
+				<p>Fax: (123) 456-7890</p>
+			</div>
+			<div>
+				<h2>Email Address</h2>
+				<p><a href="mailto:info@furniturehub.com">info@furniturehub.com</a></p>
+			</div>
+			<div>
+				<h2>Business Hours</h2>
+				<p>Monday - Friday: 9am - 5pm EST</p>
+				<p>Saturday - Sunday: Closed</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+        <div class="footer">
+		<a href="contact.php" id="navBackToTop" aria-label="Back to top" style="font-weight:bold;">
+  <button style="width:100%;
+  color:blue;
+  background-color:rgba(240, 235, 235, 0.89);
+  opacity:0.3;
+  font-weight:bold;"><span class="navFooterBackToTopText">Back to top</span></button>
+	<div class="navFooterBackToTop">
+   </div>
+</a>
+            <div class="footer-links">
+             <div>
+               <a href="about.php"> <h3> About us</h3></a> <br>
+                
+                    Our story <br>
+                    Mission statement <br>
+                    Careers <br>
+               
+             </div>
+             <br>
+             <div>
+                <h3 id="suport">Help & Support</h3> <br>
+                  <p>
+                   <a href="contact.php">Contact Us</a><br>
+                  <a href="#">  FAQ</a> <br>
+                   <a href="Return.php">Refund Policy </a><br>
+                   <a href="code/warranty policy.php">warranty Information </a><br>
+                    </p>
+              
+             </div> 
+             <br>
+            <div>
+                <h3>Quick Links</h3> <br>
+                
+                    <a href="home.php">Home</a> <br>
+                    <a href="about.php">About</a> <br>
+                    <a href=""> Products</a> <br>
+                
+            </div>
+            <br>
+			<div>
+		   <h3>Stay Connected</h3> <br>
+                <ul>
+                <i id="icon" class="fab fa-facebook" style="color: white; background-color: rgb(66, 103, 178); padding: 5px; margin:1rem; font-size:x-large;" > </i> 
+                <i id="icon"class="fab fa-pinterest" style="color: white; background-color: rgb(230, 0, 35); padding: 5px; margin:1rem; font-size:x-large;" ></i>  
+                <i id="icon"class="fab fa-twitter" style="color: white; background-color: rgb(29,161, 242); padding: 5px; margin:1rem; font-size:x-large;" ></i>   
+                <i id="icon"class="fab fa-instagram" style="color: white; background-color: rgb(193, 53, 132); padding: 5px; margin:1rem; font-size:x-large;" > </i> 
+            </ul>
+            </div>
+            <br>
+            <div>
+                <h3>Address</h3> <br>
+                <p>-123 LonglaStreet Bamenda, Cameroon <br>
+                 +237634587935 <br>
+                 furniturehub@gmail.Cameroon </p>
+            </div>
+            </div> <br>
+            
+            <hr style="color:white;
+			background-color:white;" >
+            <br>
+           <p>  &copy; 2024 Furniture<span style="color:gold">Hub</span> website. <br> All rights reserved</p>
+        </div>
+     </footer>
+<script>
+     fetch('https://restcountries.com/v3.1/all')
+.then(Response => Response.json())
+.then(data => {
+    let countries = data.map(country => country.name.common);
+    countries = [...countries.sort()];   
+    console.log(countries);
+     
+    const dropdown=
+    document.getElementById('country-dropdown');
+   countries.forEach(country=> {
+        const option=
+        document.createElement('option');
+        option.value=country;
+        option.text= country;
+        dropdown.appendChild(option) 
+    });
+});
+     </script>
+     <script src="assets/js/jquery.js"></script>
+     <script src="assets/js/bootstrap.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
